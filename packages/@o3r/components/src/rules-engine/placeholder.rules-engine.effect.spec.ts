@@ -7,12 +7,12 @@ import {
   PlaceholderRequestModel,
   PlaceholderRequestReply,
   setPlaceholderRequestEntityFromUrl
-} from '@o3r/components';
+} from '../stores';
 import {DynamicContentService} from '@o3r/dynamic-content';
 import {LocalizationService} from '@o3r/localization';
 import {shareReplay} from 'rxjs/operators';
-import {RulesEngineService} from './rules-engine.service';
-import {PlaceholderTemplateResponseEffect} from './rules-engine.effect';
+import { RulesEngineRunnerService } from '@o3r/rules-engine';
+import {PlaceholderTemplateResponseEffect} from './placeholder.rules-engine.effect';
 import {Store} from '@ngrx/store';
 
 describe('Rules Engine Effects', () => {
@@ -46,7 +46,7 @@ describe('Rules Engine Effects', () => {
         provideMockActions(() => actions),
         PlaceholderTemplateResponseEffect,
         {
-          provide: RulesEngineService,
+          provide: RulesEngineRunnerService,
           useValue: {
             engine: {
               retrieveOrCreateFactStream: (fact: string) => factsStream[fact]

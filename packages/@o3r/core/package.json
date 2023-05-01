@@ -30,7 +30,9 @@
     "@angular/core": "~16.1.6",
     "@angular/platform-browser-dynamic": "~16.1.6",
     "@angular/router": "~16.1.6",
+    "@ngrx/effects": "~16.1.0",
     "@ngrx/entity": "~16.1.0",
+    "@ngrx/router-store": "~16.1.0",
     "@ngrx/store": "~16.1.0",
     "@nrwl/devkit": "~16.6.0",
     "@nx/angular": "~16.6.0",
@@ -47,6 +49,12 @@
       "optional": true
     },
     "@angular/cli": {
+      "optional": true
+    },
+    "@ngrx/effects": {
+      "optional": true
+    },
+    "@ngrx/router-store": {
       "optional": true
     },
     "@nrwl/devkit": {

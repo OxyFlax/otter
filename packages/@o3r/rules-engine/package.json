@@ -11,7 +11,7 @@
   "scripts": {
     "nx": "nx",
     "ng": "yarn nx",
-    "prepare:build:builders": "yarn cpy 'builders/**/*.json' dist/builders && yarn cpy 'builders.json' dist && yarn cpy 'schematics/**/*.json' dist/schematics && yarn cpy 'collection.json' dist && yarn cpy 'schemas/*.json' 'dist/schemas'",
+    "prepare:build:builders": "yarn cpy 'builders/**/*.json' dist/builders && yarn cpy '{builders,collection,migration}.json' dist && yarn cpy 'schematics/**/*.json' dist/schematics && yarn cpy 'schemas/*.json' 'dist/schemas'",
     "build:builders": "tsc -b tsconfig.builders.json --pretty && yarn generate-cjs-manifest",
     "postbuild": "patch-package-json-exports",
     "prepare:compile": "cp-package-json",
@@ -30,13 +30,9 @@
     "@ngrx/entity": "~16.1.0",
     "@ngrx/store": "~16.1.0",
     "@ngx-translate/core": "~15.0.0",
-    "@o3r/components": "workspace:^",
-    "@o3r/configuration": "workspace:^",
     "@o3r/core": "workspace:^",
     "@o3r/dev-tools": "workspace:^",
-    "@o3r/dynamic-content": "workspace:^",
     "@o3r/extractors": "workspace:^",
-    "@o3r/localization": "workspace:^",
     "@o3r/logger": "workspace:^",
     "@o3r/schematics": "workspace:^",
     "@schematics/angular": "~16.1.6",
@@ -102,15 +98,11 @@
     "@nx/js": "~16.6.0",
     "@nx/linter": "~16.6.0",
     "@o3r/build-helpers": "workspace:^",
-    "@o3r/components": "workspace:^",
-    "@o3r/configuration": "workspace:^",
     "@o3r/core": "workspace:^",
     "@o3r/dev-tools": "workspace:^",
-    "@o3r/dynamic-content": "workspace:^",
     "@o3r/eslint-config-otter": "workspace:^",
     "@o3r/eslint-plugin": "workspace:^",
     "@o3r/extractors": "workspace:^",
-    "@o3r/localization": "workspace:^",
     "@o3r/logger": "workspace:^",
     "@o3r/schematics": "workspace:^",
     "@o3r/testing": "workspace:^",
@@ -151,6 +143,17 @@
     "node": ">=16.0.0"
   },
   "builders": "./builders.json",
+  "ng-update": {
+    "migrations": "./migration.json",
+    "packageGroup": [
+      "@o3r/core",
+      "@o3r/components",
+      "@o3r/configuration",
+      "@o3r/dynamic-content",
+      "@o3r/eslint-config-otter",
+      "@o3r/localization"
+    ]
+  },
   "cmsMetadata": {
     "localizationFilePath": "./localisation.metadata.json",
     "componentFilePath": "./component.class.metadata.json",

@@ -26,18 +26,24 @@
     "@angular/forms": "~16.1.6",
     "@angular/platform-browser": "~16.1.6",
     "@angular/platform-browser-dynamic": "~16.1.6",
+    "@ngrx/effects": "~16.1.0",
     "@ngrx/entity": "~16.1.0",
     "@ngrx/store": "~16.1.0",
+    "@ngx-translate/core": "~15.0.0",
     "@o3r/configuration": "workspace:^",
     "@o3r/core": "workspace:^",
     "@o3r/dev-tools": "workspace:^",
+    "@o3r/dynamic-content": "workspace:^",
     "@o3r/extractors": "workspace:^",
+    "@o3r/localization": "workspace:^",
     "@o3r/logger": "workspace:^",
+    "@o3r/rules-engine": "workspace:^",
     "@o3r/schematics": "workspace:^",
     "@o3r/testing": "workspace:^",
     "@schematics/angular": "~16.1.6",
     "chokidar": "^3.5.2",
     "globby": "^11.1.0",
+    "jsonpath-plus": "^7.0.0",
     "rxjs": "^7.8.1",
     "typescript": "~5.1.6"
   },
@@ -45,10 +51,22 @@
     "@angular-devkit/schematics": {
       "optional": true
     },
+    "@ngx-translate/core": {
+      "optional": true
+    },
     "@o3r/configuration": {
       "optional": true
     },
+    "@o3r/dynamic-content": {
+      "optional": true
+    },
     "@o3r/extractors": {
+      "optional": true
+    },
+    "@o3r/localization": {
+      "optional": true
+    },
+    "@o3r/rules-engine": {
       "optional": true
     },
     "@o3r/schematics": {
@@ -61,6 +79,9 @@
       "optional": true
     },
     "globby": {
+      "optional": true
+    },
+    "jsonpath-plus": {
       "optional": true
     },
     "typescript": {
@@ -87,18 +108,22 @@
     "@babel/core": "~7.22.0",
     "@babel/preset-typescript": "~7.22.0",
     "@compodoc/compodoc": "^1.1.19",
+    "@ngrx/effects": "~16.1.0",
     "@ngrx/entity": "~16.1.0",
     "@ngrx/store": "~16.1.0",
+    "@ngx-translate/core": "~15.0.0",
     "@nx/jest": "~16.6.0",
     "@o3r/analytics": "workspace:^",
     "@o3r/build-helpers": "workspace:^",
     "@o3r/configuration": "workspace:^",
     "@o3r/core": "workspace:^",
     "@o3r/dev-tools": "workspace:^",
+    "@o3r/dynamic-content": "workspace:^",
     "@o3r/eslint-plugin": "workspace:^",
     "@o3r/extractors": "workspace:^",
     "@o3r/localization": "workspace:^",
     "@o3r/logger": "workspace:^",
+    "@o3r/rules-engine": "workspace:^",
     "@o3r/schematics": "workspace:^",
     "@o3r/testing": "workspace:^",
     "@schematics/angular": "~16.1.6",
@@ -119,6 +144,7 @@
     "jest-environment-jsdom": "~29.6.2",
     "jest-junit": "~16.0.0",
     "jest-preset-angular": "~13.1.1",
+    "jsonpath-plus": "^7.0.0",
     "nx": "~16.6.0",
     "rxjs": "^7.8.1",
     "typescript": "~5.1.6",
