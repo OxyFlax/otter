@@ -6,7 +6,7 @@ describe('Timeout Fetch Plugin', () => {
   it('should reject on timeout', async () => {
     const plugin = new TimeoutFetch(100);
 
-    const runner = plugin.load({} as any);
+    const runner = plugin.load({controller: new AbortController()} as any);
     const call = new Promise<any>((resolve) => setTimeout(() => resolve(undefined), 1000));
 
     const callback = jest.fn();
@@ -20,7 +20,7 @@ describe('Timeout Fetch Plugin', () => {
   it('should not reject on fetch rejection', async () => {
     const plugin = new TimeoutFetch(6000);
 
-    const runner = plugin.load({} as any);
+    const runner = plugin.load({controller: new AbortController()} as any);
     const call = new Promise<any>((_resolve, reject) => setTimeout(() => reject(new EmptyResponseError('')), 100));
 
 
@@ -33,7 +33,7 @@ describe('Timeout Fetch Plugin', () => {
   it('should forward the fetch response', async () => {
     const plugin = new TimeoutFetch(2000);
 
-    const runner = plugin.load({} as any);
+    const runner = plugin.load({controller: new AbortController()} as any);
     const call = new Promise<any>((resolve) => setTimeout(() => resolve({test: true}), 100));
 
     const promise = runner.transform(call);
