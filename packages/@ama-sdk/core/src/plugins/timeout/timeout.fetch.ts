@@ -103,7 +103,7 @@ export class TimeoutFetch implements FetchPlugin {
 
           try {
             const response = await fetchCall;
-            if (!context.controller!.signal.aborted) {
+            if (!context.controller?.signal.aborted) {
               resolve(response);
             }
           } catch (ex) {
