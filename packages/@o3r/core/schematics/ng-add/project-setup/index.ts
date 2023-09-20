@@ -39,11 +39,12 @@ export const prepareProject = (options: NgAddSchematicsSchema) => async (tree: T
   }
   const o3rCoreVersion = corePackageJsonContent.version;
   const {
-    addVsCodeRecommendations, applyEsLintFix, getWorkspaceConfig, install, isStandaloneRepository, mapImportV7toV8, ngAddPackages,
+    addDependenciesInPackageJson, addVsCodeRecommendations, applyEsLintFix, getWorkspaceConfig, install, isStandaloneRepository, mapImportV7toV8, ngAddPackages,
     readPackageJson, removePackages, renamedPackagesV7toV8, updateImports, isMultipackagesContext, getO3rPeerDeps
   } = await import('@o3r/schematics');
   const installOtterLinter = await shouldOtterLinterBeInstalled(context);
   const workspaceProject = options.projectName && getWorkspaceConfig(tree)?.projects?.[options.projectName] || undefined;
+  const workingDirectory = workspaceProject?.root;
   const projectType = workspaceProject?.projectType;
   const depsInfo = getO3rPeerDeps(corePackageJsonPath);
   const internalPackagesToInstallWithNgAdd = Array.from(new Set([
@@ -105,6 +106,7 @@ export const prepareProject = (options: NgAddSchematicsSchema) => async (tree: T
     ];
   }
   const commonRules = [
+    addDependenciesInPackageJson([corePackageJsonContent.name!], {...options, workingDirectory, version: corePackageJsonContent.version}),
     genericUpdates(),
     o3rBasicUpdates(options.projectName, o3rCoreVersion, projectType),
     ngAddPackages(internalPackagesToInstallWithNgAdd,
