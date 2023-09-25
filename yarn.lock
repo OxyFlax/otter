@@ -83,7 +83,7 @@ __metadata:
     "@o3r/schematics": "workspace:^"
     "@schematics/angular": ~16.2.0
     "@swc/cli": ^0.1.57
-    "@swc/core": ^1.3.66
+    "@swc/core": ^1.3.85
     "@swc/helpers": ^0.5.0
     "@types/jest": ~29.5.2
     "@types/node": ^18.0.0
@@ -110,7 +110,7 @@ __metadata:
     tslib: ^2.5.3
     typescript: ~5.1.6
     uuid: ^9.0.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/schematics": ~16.2.0
     "@angular/cli": ~16.2.0
@@ -6580,7 +6580,7 @@ __metadata:
     type-fest: ^3.12.0
     typescript: ~5.1.6
     webpack: ~5.88.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@ama-sdk/core": "workspace:^"
     "@angular/common": ~16.2.0
@@ -6659,7 +6659,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@ama-sdk/core": "workspace:^"
     "@angular-devkit/schematics": ~16.2.0
@@ -6730,7 +6730,7 @@ __metadata:
     rxjs: ^7.8.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/schematics": ~16.2.0
     "@angular/common": ~16.2.0
@@ -6848,7 +6848,7 @@ __metadata:
     tsc-watch: ^6.0.0
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   languageName: unknown
   linkType: soft
 
@@ -6913,7 +6913,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/architect": ~0.1602.0
     "@angular-devkit/schematics": ~16.2.0
@@ -7014,7 +7014,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular/core": ~16.2.0
     "@angular/platform-browser-dynamic": ~16.2.0
@@ -7115,7 +7115,7 @@ __metadata:
     type-fest: ^3.12.0
     typescript: ~5.1.6
     uuid: ^9.0.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@ama-sdk/core": "workspace:^"
     "@ama-sdk/schematics": "workspace:^"
@@ -7322,7 +7322,7 @@ __metadata:
     rxjs: ^7.8.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/architect": ~0.1602.0
     "@angular/compiler-cli": ~16.2.0
@@ -7528,7 +7528,7 @@ __metadata:
     typedoc: ~0.25.0
     typescript: ~5.1.6
     typescript-json-schema: ~0.61.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/core": ~16.2.0
     "@o3r/core": "workspace:^"
@@ -7591,7 +7591,7 @@ __metadata:
     rxjs: ^7.8.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@ama-sdk/core": "workspace:^"
     "@angular/common": ~16.2.0
@@ -7647,8 +7647,8 @@ __metadata:
     "@o3r/eslint-config-otter": "workspace:^"
     "@o3r/eslint-plugin": "workspace:^"
     "@schematics/angular": ~16.2.0
-    "@swc-node/register": ^1.6.6
-    "@swc/core": ^1.3.66
+    "@swc-node/register": ^1.6.7
+    "@swc/core": ^1.3.85
     "@types/jest": ~29.5.2
     "@types/node": ^18.0.0
     "@types/semver": ^7.3.13
@@ -7698,7 +7698,7 @@ __metadata:
     typescript: ~5.1.6
     webpack: ~5.88.0
     winston: ^3.8.2
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   languageName: unknown
   linkType: soft
 
@@ -7754,7 +7754,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   languageName: unknown
   linkType: soft
 
@@ -7822,7 +7822,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/architect": ~0.1602.0
     "@angular-devkit/core": ~16.2.0
@@ -7918,7 +7918,7 @@ __metadata:
     smartlook-client: ^8.0.0
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular/core": ~16.2.0
     "@angular/platform-browser-dynamic": ~16.2.0
@@ -8006,7 +8006,7 @@ __metadata:
     tslib: ^2.5.3
     typescript: ~5.1.6
     winston: ^3.8.2
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/schematics": ~16.2.0
     "@angular/common": ~16.2.0
@@ -8089,7 +8089,7 @@ __metadata:
     rxjs: ^7.8.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular/common": ~16.2.0
     "@angular/core": ~16.2.0
@@ -8185,7 +8185,7 @@ __metadata:
     type-fest: ^3.12.0
     typescript: ~5.1.6
     typescript-json-schema: ~0.61.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/architect": ~0.1602.0
     "@angular-devkit/core": ~16.2.0
@@ -8287,7 +8287,7 @@ __metadata:
     tslib: ^2.5.3
     type-fest: ^3.12.0
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/architect": ~0.1602.0
     "@angular-devkit/core": ~16.2.0
@@ -8384,7 +8384,7 @@ __metadata:
     tslib: ^2.5.3
     typescript: ~5.1.6
     webpack: ~5.88.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   languageName: unknown
   linkType: soft
 
@@ -8436,7 +8436,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/core": ~16.2.0
     "@angular-devkit/schematics": ~16.2.0
@@ -8521,7 +8521,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/core": ~16.2.0
     "@angular-devkit/schematics": ~16.2.0
@@ -8654,7 +8654,7 @@ __metadata:
     ts-jest: ~29.1.1
     tslib: ^2.5.3
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/architect": ~0.1602.0
     "@angular-devkit/core": ~16.2.0
@@ -8795,7 +8795,7 @@ __metadata:
     tslib: ^2.5.3
     type-fest: ^3.12.0
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@amadeus-it-group/kassette": ^1.6.0
     "@angular-devkit/schematics": ~16.2.0
@@ -8887,7 +8887,7 @@ __metadata:
     tslib: ^2.5.3
     typescript: ~5.1.6
     uuid: ^9.0.0
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   peerDependencies:
     "@angular-devkit/schematics": ~16.2.0
     "@o3r/core": "workspace:^"
@@ -10199,20 +10199,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc-node/core@npm:^1.10.4":
-  version: 1.10.4
-  resolution: "@swc-node/core@npm:1.10.4"
+"@swc-node/core@npm:^1.10.5":
+  version: 1.10.5
+  resolution: "@swc-node/core@npm:1.10.5"
   peerDependencies:
     "@swc/core": ">= 1.3"
-  checksum: 0c6469d1410a20f5bbbac61447dd869773a180e9ba7ae8b8a5d3392e94167daea83ea2358e476195bf7dc3f6ca8c1e08c712a4c5069d77129e250452b18aa963
+  checksum: 642e230388fd53842a4ad2c7daff0bf4cf1327f0002de49a5fac19d74770f5a0a5b7dd265c1e2feafa08ef22fa5dfe7957e375c03834a3059adefecfdbbff274
   languageName: node
   linkType: hard
 
-"@swc-node/register@npm:^1.6.6":
-  version: 1.6.6
-  resolution: "@swc-node/register@npm:1.6.6"
+"@swc-node/register@npm:^1.6.7":
+  version: 1.6.7
+  resolution: "@swc-node/register@npm:1.6.7"
   dependencies:
-    "@swc-node/core": ^1.10.4
+    "@swc-node/core": ^1.10.5
     "@swc-node/sourcemap-support": ^0.3.0
     colorette: ^2.0.19
     debug: ^4.3.4
@@ -10221,7 +10221,7 @@ __metadata:
   peerDependencies:
     "@swc/core": ">= 1.3"
     typescript: ">= 4.3"
-  checksum: 2d8d054fd782735570a1b57fbb96f2667745bb905f4aee7504b4a56e54186a5b2a5c91f8e520012695489cb208096c72468b528d49ddd0ad85e1642b218f945d
+  checksum: adb78dadbe52243c167b229743d02f7e9451624ac049017d6332a1f2d7f3c51e8569b4ef743d8343087ee6dc6691a644fb112d53985aaad30dc9a537b764860d
   languageName: node
   linkType: hard
 
@@ -10256,90 +10256,92 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-darwin-arm64@npm:1.3.66"
+"@swc/core-darwin-arm64@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-darwin-arm64@npm:1.3.88"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-darwin-x64@npm:1.3.66"
+"@swc/core-darwin-x64@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-darwin-x64@npm:1.3.88"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.66"
+"@swc/core-linux-arm-gnueabihf@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.88"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.66"
+"@swc/core-linux-arm64-gnu@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.88"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-linux-arm64-musl@npm:1.3.66"
+"@swc/core-linux-arm64-musl@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.88"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-linux-x64-gnu@npm:1.3.66"
+"@swc/core-linux-x64-gnu@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.88"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-linux-x64-musl@npm:1.3.66"
+"@swc/core-linux-x64-musl@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.88"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.66"
+"@swc/core-win32-arm64-msvc@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.88"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.66"
+"@swc/core-win32-ia32-msvc@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.88"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core-win32-x64-msvc@npm:1.3.66"
+"@swc/core-win32-x64-msvc@npm:1.3.88":
+  version: 1.3.88
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.88"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.3.66":
-  version: 1.3.66
-  resolution: "@swc/core@npm:1.3.66"
+"@swc/core@npm:^1.3.85":
+  version: 1.3.88
+  resolution: "@swc/core@npm:1.3.88"
   dependencies:
-    "@swc/core-darwin-arm64": 1.3.66
-    "@swc/core-darwin-x64": 1.3.66
-    "@swc/core-linux-arm-gnueabihf": 1.3.66
-    "@swc/core-linux-arm64-gnu": 1.3.66
-    "@swc/core-linux-arm64-musl": 1.3.66
-    "@swc/core-linux-x64-gnu": 1.3.66
-    "@swc/core-linux-x64-musl": 1.3.66
-    "@swc/core-win32-arm64-msvc": 1.3.66
-    "@swc/core-win32-ia32-msvc": 1.3.66
-    "@swc/core-win32-x64-msvc": 1.3.66
+    "@swc/core-darwin-arm64": 1.3.88
+    "@swc/core-darwin-x64": 1.3.88
+    "@swc/core-linux-arm-gnueabihf": 1.3.88
+    "@swc/core-linux-arm64-gnu": 1.3.88
+    "@swc/core-linux-arm64-musl": 1.3.88
+    "@swc/core-linux-x64-gnu": 1.3.88
+    "@swc/core-linux-x64-musl": 1.3.88
+    "@swc/core-win32-arm64-msvc": 1.3.88
+    "@swc/core-win32-ia32-msvc": 1.3.88
+    "@swc/core-win32-x64-msvc": 1.3.88
+    "@swc/counter": ^0.1.1
+    "@swc/types": ^0.1.5
   peerDependencies:
     "@swc/helpers": ^0.5.0
   dependenciesMeta:
@@ -10366,7 +10368,14 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: e6029c648ba47c522bed51a9f2fee606f82de1f9233e2e89197e43b0a4867054174ca05e825e688cdc4de332221c0da2e12ba7ba875549e8b5432aa70fe19263
+  checksum: caaf06fc1f4d472b20d825cf84139306777d03d599b6a2a7cddc01e2edc176479992166acb94034989222a8f662662f05ec48bb16d6262a471b9be45c1a7d9cd
+  languageName: node
+  linkType: hard
+
+"@swc/counter@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@swc/counter@npm:0.1.1"
+  checksum: bb974babd493ba01c0d4a95ab610c3fc15fbf609c08cb0342798e485f57ecc0950abbf84e07124e63c5fe610b492d9a8dd03701d3b9ef7329d9e8bf3cc44980f
   languageName: node
   linkType: hard
 
@@ -10376,6 +10385,13 @@ __metadata:
   dependencies:
     tslib: ^2.4.0
   checksum: 61c9c7dddb707deb58b85328cfe9d211887145f1311ae6a6e6c0fa9f781fb29916a8669a7d479e46e26a32a89d6ef4f293a22dee4925e009c84051e9dd10e8b7
+  languageName: node
+  linkType: hard
+
+"@swc/types@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@swc/types@npm:0.1.5"
+  checksum: 6aee11f62d3d805a64848e0bd5f0e0e615f958e327a9e1260056c368d7d28764d89e38bd8005a536c9bf18afbcd303edd84099d60df34a2975d62540f61df13b
   languageName: node
   linkType: hard
 
@@ -24364,7 +24380,7 @@ __metadata:
     rxjs: ^7.8.1
     ts-jest: ~29.1.1
     typescript: ~5.1.6
-    zone.js: ~0.14.0
+    zone.js: ~0.13.1
   languageName: unknown
   linkType: soft
 
@@ -31254,11 +31270,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zone.js@npm:~0.14.0":
-  version: 0.14.0
-  resolution: "zone.js@npm:0.14.0"
+"zone.js@npm:~0.13.1":
+  version: 0.13.3
+  resolution: "zone.js@npm:0.13.3"
   dependencies:
     tslib: ^2.3.0
-  checksum: 8a1c055ff1f3da6e80f27bdc1b3a69cdb0098194ddfd9d9cee19414d5e00f09863f53a5746835ab711ef94bb828f44e4fe9f6c1491a0981dbcd13d3b88f5d997
+  checksum: 73888a51b0299b4b56c56b97c71fe4a3548a9bdb9e4b4c49dd0e110a4487fbe7f141c08d3e3acff875a6fbb6d581750209ac767ae5d82dca0636ede41aebd436
   languageName: node
   linkType: hard
