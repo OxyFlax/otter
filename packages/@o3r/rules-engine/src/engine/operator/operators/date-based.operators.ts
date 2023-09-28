@@ -1,4 +1,4 @@
-import {isValidDateInput, isValidDateRange} from '../operator.helpers';
+import {isValidDateInput, isValidDateRange, isValidDateWithMinutes} from '../operator.helpers';
 import {DateInput, Operator} from '../operator.interface';
 
 /**
@@ -14,6 +14,40 @@ export const inRangeDate: Operator<Date, [DateInput, DateInput], DateInput> = {
   },
   validateLhs: isValidDateInput,
   validateRhs: isValidDateRange
+};
+
+/**
+ * Check if the value of the variable is in the next x minutes
+ *
+ * @title is in next minutes
+ */
+export const dateInNextMinutes: Operator<Date, [DateInput, number], DateInput> = {
+  name: 'dateInNextMinutes',
+  evaluator: (leftDateInput, [rightDate, minutes]) => {
+    const targetDate = new Date(rightDate);
+    const leftDate = new Date(leftDateInput);
+    targetDate.setMinutes(targetDate.getMinutes() + +minutes);
+    return leftDate <= targetDate;
+  },
+  validateLhs: isValidDateInput,
+  validateRhs: isValidDateWithMinutes
+};
+
+/**
+ * Check if the value of the variable is not in the next x minutes
+ *
+ * @title is not in next minutes
+ */
+export const dateNotInNextMinutes: Operator<Date, [DateInput, number], DateInput> = {
+  name: 'dateNotInNextMinutes',
+  evaluator: (leftDateInput, [rightDate, minutes]) => {
+    const targetDate = new Date(rightDate);
+    const leftDate = new Date(leftDateInput);
+    targetDate.setMinutes(targetDate.getMinutes() + +minutes);
+    return leftDate > targetDate;
+  },
+  validateLhs: isValidDateInput,
+  validateRhs: isValidDateWithMinutes
 };
 
 /**
@@ -81,5 +115,5 @@ export const dateNotEquals: Operator<Date, DateInput, DateInput> = {
 };
 
 export const dateBasedOperators = [
-  inRangeDate, dateAfter, dateBefore, dateEquals, dateNotEquals
+  inRangeDate, dateInNextMinutes, dateNotInNextMinutes, dateAfter, dateBefore, dateEquals, dateNotEquals
 ];

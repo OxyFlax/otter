@@ -78,6 +78,19 @@ export const isValidDateRange = (operatorInput: any): operatorInput is [DateInpu
     new Date(operatorInput[0]) <= new Date(operatorInput[1]);
 };
 
+
+/**
+ * Verifies if the parameter has a valid date and number representing minutes
+ *
+ * @param operatorInput
+ */
+export const isValidDateWithMinutes = (operatorInput: any): operatorInput is [DateInput, number] => {
+  return Array.isArray(operatorInput) &&
+    operatorInput.length === 2 &&
+    isValidDateInput(operatorInput[0]) &&
+    numberValidator(operatorInput[1]);
+};
+
 /**
  * Validate that a value is a supported simple type
  *

@@ -3,7 +3,9 @@ import {
   dateAfter,
   dateBefore,
   dateEquals,
+  dateInNextMinutes,
   dateNotEquals,
+  dateNotInNextMinutes,
   inRangeDate
 } from './date-based.operators';
 
@@ -19,9 +21,8 @@ describe('Operators', () => {
       expect(inRangeDate.name).toBe('inRangeDate');
     });
 
-    it('should invalid when dates is invalid', () => {
+    it('should invalid when dates are invalid', () => {
       expect(() => executeOperator('invalid date' as any, [] as any, inRangeDate)).toThrow();
-      expect(() => executeOperator(null as any, [] as any, inRangeDate)).toThrow();
       expect(() => executeOperator(null as any, [] as any, inRangeDate)).toThrow();
       expect(() => executeOperator(now, ['invalid date'] as any, inRangeDate)).toThrow();
       expect(() => executeOperator(now, ['invalid date', 'invalid date'], inRangeDate)).toThrow();
@@ -35,6 +36,50 @@ describe('Operators', () => {
       expect(executeOperator(now.getTime(), [tomorrow.getTime(), tomorrow.getTime()], inRangeDate)).toBeFalsy();
       expect(executeOperator('2000-01-01', ['1999-12-31', '2099-12-31'], inRangeDate)).toBeTruthy();
       expect(executeOperator('2000-01-01', ['2099-12-31', '3099-12-31'], inRangeDate)).toBeFalsy();
+    });
+  });
+
+  describe('dateInNextMinutes', () => {
+    it('should have a valid name', () => {
+      expect(dateInNextMinutes.name).toBe('dateInNextMinutes');
+    });
+
+    it('should invalid when dates are invalid', () => {
+      expect(() => executeOperator('invalid date' as any, [] as any, dateInNextMinutes)).toThrow();
+      expect(() => executeOperator(null as any, [] as any, dateInNextMinutes)).toThrow();
+      expect(() => executeOperator(now, ['invalid date'] as any, dateInNextMinutes)).toThrow();
+      expect(() => executeOperator(now, ['invalid date', 7], dateInNextMinutes)).toThrow();
+
+    });
+
+    it('should correctly check date in next minutes', () => {
+      expect(executeOperator(now, [tomorrow, 0], dateInNextMinutes)).toBeTruthy();
+      expect(executeOperator(now, [yesterday, 0], dateInNextMinutes)).toBeFalsy();
+      expect(executeOperator(now, [now, -1], dateInNextMinutes)).toBeFalsy();
+      expect(executeOperator('2000-01-01', ['2000-01-01', 1], dateInNextMinutes)).toBeTruthy();
+      expect(executeOperator('2000-01-01', ['1999-12-31', 0], dateInNextMinutes)).toBeFalsy();
+    });
+  });
+
+  describe('dateNotInNextMinutes', () => {
+    it('should have a valid name', () => {
+      expect(dateNotInNextMinutes.name).toBe('dateNotInNextMinutes');
+    });
+
+    it('should invalid when dates are invalid', () => {
+      expect(() => executeOperator('invalid date' as any, [] as any, dateNotInNextMinutes)).toThrow();
+      expect(() => executeOperator(null as any, [] as any, dateNotInNextMinutes)).toThrow();
+      expect(() => executeOperator(now, ['invalid date'] as any, dateNotInNextMinutes)).toThrow();
+      expect(() => executeOperator(now, ['invalid date', 7], dateNotInNextMinutes)).toThrow();
+
+    });
+
+    it('should correctly check date not in next minutes', () => {
+      expect(executeOperator(now, [tomorrow, 0], dateNotInNextMinutes)).toBeFalsy();
+      expect(executeOperator(now, [yesterday, 0], dateNotInNextMinutes)).toBeTruthy();
+      expect(executeOperator(now, [now, -1], dateNotInNextMinutes)).toBeTruthy();
+      expect(executeOperator('2000-01-01', ['2000-01-01', 1], dateNotInNextMinutes)).toBeFalsy();
+      expect(executeOperator('2000-01-01', ['1999-12-31', 0], dateNotInNextMinutes)).toBeTruthy();
     });
   });
 

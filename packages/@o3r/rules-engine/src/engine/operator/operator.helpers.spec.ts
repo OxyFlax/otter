@@ -1,5 +1,5 @@
 import {of} from 'rxjs';
-import {executeOperator, isRangeNumber, isString, isSupportedSimpleTypes, isValidDate, isValidDateInput, isValidDateRange, numberValidator} from './operator.helpers';
+import {executeOperator, isRangeNumber, isString, isSupportedSimpleTypes, isValidDate, isValidDateInput, isValidDateRange, isValidDateWithMinutes, numberValidator} from './operator.helpers';
 import {Operator} from './operator.interface';
 
 describe('Operator helpers', () => {
@@ -184,6 +184,22 @@ describe('Operator helpers', () => {
       expect(isValidDateRange([1, 2])).toBeTruthy();
       expect(isValidDateRange(['2012-12-12', '2013-03-03'])).toBeTruthy();
       expect(isValidDateRange([new Date('2012-12-12'), new Date('2013-03-03')])).toBeTruthy();
+    });
+  });
+
+  describe('isValidDateWithMinutes', () => {
+    it('should validate input properly', () => {
+      expect(isValidDateWithMinutes(null)).toBeFalsy();
+      expect(isValidDateWithMinutes('test')).toBeFalsy();
+      expect(isValidDateWithMinutes([1, NaN])).toBeFalsy();
+      expect(isValidDateWithMinutes(['2012-12-12', '2013-03-03'])).toBeFalsy();
+      expect(isValidDateWithMinutes(['2012-12-12', '2013-03-03'])).toBeFalsy();
+
+      expect(isValidDateWithMinutes([1, 2])).toBeTruthy();
+      expect(isValidDateWithMinutes(['2012-12-12', 7])).toBeTruthy();
+      expect(isValidDateWithMinutes([new Date('2012-12-12'), 4.2])).toBeTruthy();
+      expect(isValidDateWithMinutes([new Date('2012-12-12'), -30])).toBeTruthy();
+
     });
   });
 
