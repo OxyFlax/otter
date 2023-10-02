@@ -1,6 +1,6 @@
 @use 'sass-true/sass/true' as sass-true;
-@use './functions' as theme-functions;
-@use '../utils/functions' as utils-functions;
+@use './material' as mat-functions;
+@use '../../utils/functions' as utils-functions;
 
 /// Do not fail on error but return error message
 $test-mode-enabled: true;
@@ -42,7 +42,7 @@ $reverted-palette: (
 @include sass-true.describe('revert-palette [function]') {
   @include sass-true.it('should return the palette reverted') {
     @include sass-true.assert-equal(
-      theme-functions.revert-palette($palette),
+      mat-functions.revert-palette($palette),
       $reverted-palette
     )
   }
@@ -52,7 +52,7 @@ $reverted-palette: (
 @include sass-true.describe('o3r-var') {
   @include sass-true.it('should generate a variable') {
     @include sass-true.assert-equal(
-      theme-functions.variable('test-ok', #000),
+      mat-functions.variable('test-ok', #000),
       var(--test-ok, #000)
     )
   }
@@ -61,14 +61,14 @@ $reverted-palette: (
 @include sass-true.describe('o3r-get') {
   @include sass-true.it('should get a variable wsass-true.ith value') {
     @include sass-true.assert-equal(
-      theme-functions.get((variable: 'test-ok', value: #000)),
+      mat-functions.get((variable: 'test-ok', value: #000)),
       var(--test-ok, #000)
     )
   }
 
   @include sass-true.it('should get a variable wsass-true.ithout value') {
     @include sass-true.assert-equal(
-      theme-functions.get((variable: 'test-ok')),
+      mat-functions.get((variable: 'test-ok')),
       var(--test-ok)
     )
   }
@@ -79,14 +79,14 @@ $fake-palette: (500: (variable: 'test-500', value: #000), default: (variable: 't
 @include sass-true.describe('o3r-color') {
   @include sass-true.it('should get a variable wsass-true.ith value') {
     @include sass-true.assert-equal(
-      theme-functions.color($fake-palette, 500),
+      mat-functions.color($fake-palette, 500),
       var(--test-500, #000)
     )
   }
 
   @include sass-true.it('should fallback to default value') {
     @include sass-true.assert-equal(
-      theme-functions.color($fake-palette, 800),
+      mat-functions.color($fake-palette, 800),
       var(--test-default, #fff)
     )
   }
@@ -97,14 +97,14 @@ $fake-palette: (contrast: (500: (variable: 'test-500', value: #000), default: (v
 @include sass-true.describe('o3r-contrast') {
   @include sass-true.it('should get a variable wsass-true.ith value') {
     @include sass-true.assert-equal(
-      theme-functions.contrast($fake-palette, 500),
+      mat-functions.contrast($fake-palette, 500),
       var(--test-500, #000)
     )
   }
 
   @include sass-true.it('should fallback to default value') {
     @include sass-true.assert-equal(
-      theme-functions.contrast($fake-palette, 800),
+      mat-functions.contrast($fake-palette, 800),
       var(--test-default, #fff)
     )
   }

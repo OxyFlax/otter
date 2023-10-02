@@ -20,6 +20,9 @@
   "exports": {
     ".": {
       "sass": "./_index.scss"
+    },
+    "./otter-theme": {
+      "sass": "./theming/otter-theme/_index.scss"
     }
   },
   "peerDependencies": {

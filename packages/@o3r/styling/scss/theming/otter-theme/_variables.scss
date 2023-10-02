@@ -1,6 +1,6 @@
 /// Import the Otter Theme function
-@use './otter-theme/theme';
-@use './functions';
+@use './theme' as theme;
+@use '../functions' as functions;
 
 /// Default Meta Theme theme
 $meta-theme: theme.generate-otter-theme();
